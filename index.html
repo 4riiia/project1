@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة إلكترونية</title>
+    <link rel="stylesheet" href="Rama5.css">
+</head>
+<body>
+    <h1>إدارة المكتبة</h1>
+
+    <!-- إضافة كتاب -->
+    <div class="form-container">
+        <h2>إضافة كتاب جديد</h2>
+        <input type="text" id="bookTitle" placeholder="عنوان الكتاب">
+        <input type="text" id="bookAuthor" placeholder="اسم المؤلف">
+        <input type="number" id="bookPrice" placeholder="السعر">
+        <input type="number" id="bookQuantity" placeholder="الكمية">
+        <button onclick="addBook()">إضافة</button>
+    </div>
+
+    <!-- عرض الكتب -->
+    <h2>قائمة الكتب</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>العنوان</th>
+                <th>المؤلف</th>
+                <th>السعر</th>
+                <th>الكمية</th>
+                <th>إجراء</th>
+            </tr>
+        </thead>
+        <tbody id="bookList"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
